@@ -1,0 +1,132 @@
+<div className="bg-[#F9FAFB] text-[#111827] min-h-screen">
+        
+        {/* Header */}
+        <header className="fixed top-0 left-0 w-full z-50 bg-[#F9FAFB]/90 backdrop-blur border-b border-gray-200">
+          <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <div className="font-bold text-xl text-[#064E3B]">SIDEKICK</div>
+            <nav className="hidden md:flex gap-6 text-sm font-medium">
+              <a className="hover:text-[#10B981]" href="#">
+                AI SDRs
+              </a>
+              <a className="hover:text-[#10B981]" href="#">
+                How it Works
+              </a>
+              <a className="hover:text-[#10B981]" href="#">
+                Resources
+              </a>
+            </nav>
+            <button className="bg-[#064E3B] text-white px-4 py-2 rounded-lg hover:bg-[#10B981] transition">
+              Book a Demo
+            </button>
+          </div>
+        </header>
+
+        {/* Hero */}
+        <section className="pt-32 pb-24 overflow-hidden">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 px-6 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+                AI SDRs That Help Human SDRs <br />
+                <span className="text-[#10B981]">
+                  Spend More Time Making Calls
+                </span>
+              </h1>
+              <p className="mt-6 text-gray-600 max-w-xl">
+                Automatically find, qualify, and hand over sales-ready leads so
+                your SDRs focus on what matters.
+              </p>
+              <div className="mt-8 flex gap-4">
+                <button className="bg-[#064E3B] text-white px-6 py-3 rounded-xl hover:bg-[#10B981] transition">
+                  What is an AI SDR?
+                </button>
+                <button className="border border-[#064E3B] text-[#064E3B] px-6 py-3 rounded-xl hover:bg-[#064E3B] hover:text-white transition">
+                  Book a Demo
+                </button>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="bg-white rounded-2xl shadow-xl h-80"
+            />
+          </div>
+        </section>
+
+        {/* What We Do */}
+        <section className="py-24 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-center text-3xl font-bold mb-12">
+              Are your SDRs at{" "}
+              <span className="text-[#10B981]">100% capacity?</span>
+            </h2>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                "Prospecting & Enrichment",
+                "Engagement & Touchpoints",
+                "Real-Time Scoring",
+                "Task Creation",
+              ].map((item) => (
+                <motion.div
+                  key={item}
+                  whileHover={{ y: -6 }}
+                  className="bg-[#F9FAFB] border rounded-2xl p-6 hover:shadow-lg transition"
+                >
+                  <h3 className="font-semibold text-lg mb-2">{item}</h3>
+                  <p className="text-sm text-gray-600">
+                    Automated workflows that remove busywork and boost SDR
+                    efficiency.
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Sidebar / Blog */}
+        <section className="py-24">
+          <div className="max-w-7xl mx-auto px-6">
+            <h3 className="text-2xl font-bold mb-8">Side Bar</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-xl overflow-hidden shadow"
+                >
+                  <div className="h-40 bg-[#10B981]/20" />
+                  <div className="p-4 text-sm font-medium">
+                    Blog Title Placeholder
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-[#064E3B] text-white py-12">
+          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div>
+              <div className="font-bold text-lg">SIDEKICK</div>
+              <p className="text-sm text-green-200 mt-2">
+                Give your SDRs a sidekick.
+              </p>
+            </div>
+            <div className="text-sm space-y-2">
+              <div>AI SDRs</div>
+              <div>Contact</div>
+              <div>Terms & Conditions</div>
+            </div>
+            <div className="text-sm space-y-2">
+              <div>LinkedIn</div>
+              <div>Email: support@sidekick.com</div>
+            </div>
+          </div>
+        </footer>
+      </div>

@@ -1,0 +1,185 @@
+/* Navbar Start */
+.nav-underline {
+  position: relative;
+  display: inline-block;
+  color: var(--Text-Dark);
+  text-decoration: none;
+}
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--Accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-underline:hover::after {
+  transform: scaleX(1);
+}
+
+.navbarBtn {
+  border: none;
+  transition: all linear 0.3s;
+  background-color: var(--Primary);
+}
+
+.navbarBtn:hover {
+  background-color: var(--Accent);
+}
+/* Navbar Start */
+
+/* Hero Start */
+
+.heroheadline span{
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--Primary);
+    background-color: var(--Accent);
+}
+
+.heroBody h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.heroBody h1 span {
+  color: var(--Accent);
+}
+
+.heroBody p {
+  font-size: 1rem;
+}
+
+.herobullets ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; /* Removes default bullets */
+  padding-left: 0;
+}
+
+.herobullets li {
+    font-size: 1.1rem;
+  position: relative;
+  margin: 0.5rem;
+  padding-left: 1.8em;
+  font-weight: bold;
+}
+
+.herobullets li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.heroBody button{
+    color: black;
+    background-color: transparent;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(0);
+    border: 1px solid var(--Primary);
+}
+
+.heroBody button:first-child{
+    color: white;
+    border: none;
+    transition: all ease-in 0.5s;
+    transform: translateY(0);
+    background-color: var(--Primary);
+}
+
+.heroBody button:hover{
+    border: var(--Primary);
+    transform: translateY(-4px);
+    background-color: var(--Accent);
+}
+/* Hero End */
+
+/* Our Expertise Start */
+.ourexpertisecontainer p:first-child{
+  color: var(--Primary);
+  font-weight: 900;
+  text-align: center;
+}
+
+.ourexpertisecontainer h3{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  transition: all 0.5s ease;
+}
+
+.ourexpertisecontainer h3:hover{
+  text-shadow: 2px 2px 15px var(--Primary);
+}
+
+.ourexpertisecontainer p:last-child{
+  width: 50%;
+}
+
+.ourservicescard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem;
+  border-radius: 0.9rem;
+  background: #fff;
+
+  border: 1px solid #eee;
+  background-image: linear-gradient(to right top, #a7aaa2, #bcbeb7, #d1d3cd, #e6e8e3, #fcfef9);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ourservicescard:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.ourservicescard h5{
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  transition: all 0.4s ease;
+}
+
+.ourservicescard:hover h5{
+  text-shadow: 2px 2px 15px var(--Primary);
+}
+
+.ourservicescard p{
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.iconcontainer{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--Accent);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: all 0.5s ease;
+}
+
+.ourservicescard:hover .iconcontainer{
+  box-shadow: 2px 2px 15px var(--Primary);
+  transform: translateY(-4px);
+}
+/* Our Expertise End */
