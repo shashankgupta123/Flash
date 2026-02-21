@@ -86,7 +86,7 @@ const Footer = () => {
                 Terms & Condition
               </a>
               <p className="mb-0 copyrightPara">
-                <FontAwesomeIcon icon={faCopyright} /> 2026 <a href="https://tahir-shaikh.odoo.com/" target="_blank">The Shaikh Solution</a>. All rights reserved.
+                <FontAwesomeIcon icon={faCopyright} /> 2026. All rights reserved.
               </p>
             </div>
           </Row>
