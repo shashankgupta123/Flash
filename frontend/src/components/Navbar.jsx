@@ -25,7 +25,7 @@ const PageNavbar = () => {
         <Container>
           {/* Logo – always visible */}
           <Navbar.Brand href="/" className="font-bold">
-            <h4>FLASH<span className="text-emerald-600">.</span></h4>
+            <h4 className="underline decoration-wavy decoration-green-700">FLASH<span className="text-emerald-600">.</span></h4>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="main-navbar" />
